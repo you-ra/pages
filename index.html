@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DR</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--<link href="./dest/app.css" rel="stylesheet">-->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style type="text/tailwindcss">
+            @layer base {
+                @font-face {
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/spacemono/v17/i7dMIFZifjKcF5UAWdDRaPpZUFWaHi6WZ3Q.woff2)
+                        format('woff2');
+                }
+            }
+        </style>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            myheader: ['"Space Mono"']
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+		<div class="container mx-auto border-2 border-black">
+			<div class="w-1/2 mx-auto text-center">
+				<div 
+					class="my-5 px-5 py-2 font-myheader text-xl tracking-tight border-4 border-black rounded-2xl uppercase">
+					Minizine #1/25</div>
+				<div
+					class="my-5 px-5 py-2 font-myheader text-xl tracking-tight border-4 border-black rounded-2xl">
+					World</div>
+				<div 
+					class="my-5 px-5 py-2 font-myheader text-xl tracking-tight border-4 border-black rounded-2xl">
+					;)</div>
+				<p
+                    class="my-5 px-5 py-2 font-myheader text-xl tracking-tight border-4 border-black rounded-2xl">
+                    Sticker-set
+                </p>
+			</div>
+		</div>
+        <div
+            class="container p-6 mx-auto rounded-xl shadow-lg flex items-center gap-x-8">
+            <div class="shrink-0">
+                <img class="size-12" src="./img/logo.svg" alt="ChitChat Logo" />
+            </div>
+            <div>
+                <div class="text-xl font-medium text-black">ChitChat</div>
+                <p class="font-myheader uppercase text-lg tracking-tight">
+                    Minizine #1/25
+                </p>
+                <p
+                    class="px-5 py-0 font-myheader text-xl tracking-tight border-4 border-black rounded-full">
+                    Sticker-set
+                </p>
+            </div>
+        </div>
+        <div
+            class="p-6 w-full mx-auto rounded-xl shadow-lg flex items-center gap-x-8">
+            <div class="shrink-0">
+                <img class="size-12" src="./img/logo.svg" alt="ChitChat Logo" />
+            </div>
+            <div>
+                <div class="text-xl font-medium text-black">ChitChat</div>
+                <p class="text-slate-500">
+                    You have a new message 12! You have a new message 12! You
+                    have a new message 12!
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
